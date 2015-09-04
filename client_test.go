@@ -28,7 +28,7 @@ func TestClient(t *testing.T) {
 	if err != nil {
 		fmt.Println(err)
 	} else {
-		n, _ := client.Send([]byte("hello\n"))
+		n, _ := client.Send([]byte("hello"))
 		fmt.Printf("send data length : %d \n", n)
 
 		data, _ := client.Recv()
